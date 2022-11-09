@@ -50,6 +50,7 @@
     vertical-align: middle;
     white-space: nowrap;
     margin-left: 2.75rem;
+    cursor: pointer;
 }
 
 .button:hover {
