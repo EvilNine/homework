@@ -2,36 +2,41 @@ import React from 'react'
 import s from './Message.module.css'
 
 // нужно создать правильный тип вместо any
-export type MessagePropsType = any
+export type MessagePropsType = {
+    message: {
+        id: number
+        user: {
+            avatar: string;
+            name: string;
+        }
+        message: {
+            text: string;
+            time: string;
+            }
+        }
+}
+
 
 // нужно отобразить приходящие данные
-const Message = (props: MessagePropsType) => {
+const Message: React.FC<MessagePropsType> = (props) => {
+    const data = props.message;
     return (
-        <div id={'hw1-message-' + props.message.id} className={s.message}>
+        <div id={'hw1-message-' + data.id} className={s.message}>
             <div className={s.imageAndText}>
-                <img
-                    id={'hw1-avatar-' + props.message.id}
-                    // создаёт студент
-
-                    //
-                />
+                <img id={'hw1-avatar-' + data.id}
+                     src={data.user.avatar}
+                     alt={data.user.name}/>
                 <div className={s.text}>
-                    <div id={'hw1-name-' + props.message.id} className={s.name}>
-                        {/*создаёт студент*/}
-
-                        {/**/}
+                    <div id={'hw1-name-' + data.id} className={s.name}>
+                        {data.user.name}
                     </div>
-                    <pre id={'hw1-text-' + props.message.id} className={s.messageText}>
-                        {/*создаёт студент*/}
-
-                        {/**/}
+                    <pre id={'hw1-text-' + data.id} className={s.messageText}>
+                        {data.message.text}
                     </pre>
                 </div>
             </div>
-            <div id={'hw1-time-' + props.message.id} className={s.time}>
-                {/*создаёт студент*/}
-
-                {/**/}
+            <div id={'hw1-time-' + data.id} className={s.time}>
+                {data.message.time}
             </div>
         </div>
     )
