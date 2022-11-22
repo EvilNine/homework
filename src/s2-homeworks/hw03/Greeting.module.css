@@ -1,35 +1,91 @@
 .greetingForm {
+    padding-bottom: 2.25rem;
 }
 
 .inputAndButtonContainer {
+    display: flex;
+    align-items: start;
 }
 
 .error {
+    color: var(--danger);
+    font-size: .875rem;
+    margin-top: .5rem;
 }
 
 .input {
+    background-clip: padding-box;
+    background-color: var(--white);
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    height: 2.25rem;
+    color: var(--dark);
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25;
+    padding: .5rem .75rem;
+    resize: none;
+    transition: color .4s cubic-bezier(.445,.05,.55,.95), background-color .4s cubic-bezier(.445,.05,.55,.95), border-color .4s cubic-bezier(.445,.05,.55,.95), box-shadow .4s cubic-bezier(.445,.05,.55,.95), outline-color .4s cubic-bezier(.445,.05,.55,.95);
+    width: 100%;
+
 }
 
 .input:focus {
+    border-color: var(--blue);
+    outline: none;
 }
 
 .errorInput {
+    border-color: var(--input-border-error-color);
 }
 
 .button {
+    background-color: var(--blue);
+    border: 1px solid transparent;
+    color: var(--white);
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: 600;
+    height: 2.25rem;
+    line-height: 1.25;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    transition: color .4s cubic-bezier(.445,.05,.55,.95),
+                outline .4s cubic-bezier(.445,.05,.55,.95),
+                background-color .4s cubic-bezier(.445,.05,.55,.95),
+                border-color .4s cubic-bezier(.445,.05,.55,.95),
+                box-shadow .4s cubic-bezier(.445,.05,.55,.95);
+    -webkit-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    margin-left: .75rem;
+    cursor: pointer;
+    outline-offset: 0;
 }
 
 .button:focus {
+    outline: 1px solid var(--blue);
+    outline-offset: 2px;
 }
 
 .button:active {
 }
 
 .button:disabled {
+    opacity: .5;
 }
 
 .text {
+    opacity: .5;
+    font-size: 14px;
+    margin-bottom: 9px;
 }
 
 .greeting {
+    font-size: .875rem;
+    margin-top: .5rem;
+    font-weight: 500;
 }

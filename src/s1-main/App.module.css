@@ -1,15 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 :root {
     --dark:     #000000;
     --white:    #ffffff;
     --light:    #F5F7FB;
     --gray:     #D9D9D9;
     --blue:     #0066CC;
+    --danger:   #CC0000;
 
     --message-px: .813rem;
     --message-py: .5rem;
 
-
+    --input-border-color: #D1D1D1;
+    --input-border-error-color: #CC0000;
 }
 .App {
     --header_height: 60px;
