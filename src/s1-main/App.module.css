@@ -12,6 +12,37 @@
 
     --input-border-color: #D1D1D1;
     --input-border-error-color: #CC0000;
+
+    --btn-primary-bg:               #0066CC;
+    --btn-primary-border:           #0066CC;
+    --btn-primary-color:            #ffffff;
+    --btn-primary-bg-hover:         #0080FF;
+    --btn-primary-color-hover:      #ffffff;
+    --btn-primary-bg-active:        #0059B3;
+    --btn-primary-color-active:     #ffffff;
+
+    --btn-danger-bg:                #CC1439;
+    --btn-danger-border:            #CC1439;
+    --btn-danger-color:             #ffffff;
+    --btn-danger-bg-hover:          #FF1A47;
+    --btn-danger-color-hover:       #ffffff;
+    --btn-danger-bg-active:         #B31232;
+    --btn-danger-color-active:      #ffffff;
+
+    --btn-secondary-bg:             #ffffff;
+    --btn-secondary-border:         #0066CC;
+    --btn-secondary-color:          #0066CC;
+    --btn-secondary-bg-hover:       #C9E5FF;
+    --btn-secondary-color-hover:    #0066CC;
+    --btn-secondary-bg-active:      #C9E5FF;
+    --btn-secondary-color-active:   #0066CC;
+
+    --btn-disabled-bg:              #004D99;
+    --btn-disabled-border:          #004D99;
+    --btn-disabled-color:           #002E5C;
+    --btn-disabled-opacity:         .5;
+
+
 }
 .App {
     --header_height: 60px;

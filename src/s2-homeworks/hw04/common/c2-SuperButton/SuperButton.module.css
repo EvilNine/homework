@@ -1,36 +1,75 @@
 .button {
-}
-
-.disabled {
-}
-
-.secondary {
+    border: 1px solid transparent;
+    color: var(--white);
+    border-radius: 5px;
+    display: inline-block;
+    font-size: .875rem;
+    font-weight: 600;
+    height: 1.875rem;
+    line-height: 1.25;
+    padding: 0.4rem 1.5rem;
+    text-align: center;
+    transition: color .4s cubic-bezier(.445,.05,.55,.95),
+                outline .4s cubic-bezier(.445,.05,.55,.95),
+                background-color .4s cubic-bezier(.445,.05,.55,.95),
+                border-color .4s cubic-bezier(.445,.05,.55,.95),
+                box-shadow .4s cubic-bezier(.445,.05,.55,.95);
+    -webkit-user-select: none;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    outline-offset: 0;
 }
 
 .default {
+    background-color: var(--btn-primary-bg);
+    border-color: var(--btn-primary-border);
+    color: var(--btn-primary-color);
+}
+.default:hover {
+    background-color: var(--btn-primary-bg-hover);
+    border-color: var(--btn-primary-bg-hover);
+    color: var(--btn-primary-color-hover);
+}
+.default:active {
+    background-color: var(--btn-primary-bg-active);
+    color: var(--btn-primary-color-active);
+}
+
+.secondary {
+    background-color: var(--btn-secondary-bg);
+    border-color: var(--btn-secondary-border);
+    color: var(--btn-secondary-color);
+}
+.secondary:hover {
+    background-color: var(--btn-secondary-bg-hover);
+    color: var(--btn-secondary-color-hover);
+}
+.secondary:active {
+    background-color: var(--btn-secondary-bg-active);
+    border-color: var(--btn-secondary-bg-active);
+    color: var(--btn-secondary-color-active);
 }
 
 .red {
+    background-color: var(--btn-danger-bg);
+    border-color: var(--btn-danger-border);
+    color: var(--btn-danger-color);
 }
-
-.default:hover {
-}
-
 .red:hover {
+    background-color: var(--btn-danger-bg-hover);
+    border-color: var(--btn-danger-bg-hover);
+    color: var(--btn-danger-color-hover);
 }
-
-.secondary:hover {
-}
-
-
-.default:active {
-}
-
-.secondary:active {
-}
-
 .red:active {
+    background-color: var(--btn-danger-bg-active);
+    color: var(--btn-danger-color-active);
 }
 
-.button:disabled {
+.button:disabled, .disabled {
+    background-color: var(--btn-disabled-bg);
+    border-color: var(--btn-disabled-border);
+    color: var(--btn-disabled-color);
+    opacity: var(--btn-disabled-opacity);
 }

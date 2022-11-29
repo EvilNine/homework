@@ -1,20 +1,45 @@
 .input:focus {
+    border-color: var(--blue);
+    outline: none;
 }
 
 .input {
+    background-clip: padding-box;
+    background-color: var(--white);
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+    height: 2.25rem;
+    color: var(--dark);
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25;
+    padding: .5rem .75rem;
+    resize: none;
+    transition: color .4s cubic-bezier(.445,.05,.55,.95), background-color .4s cubic-bezier(.445,.05,.55,.95), border-color .4s cubic-bezier(.445,.05,.55,.95), box-shadow .4s cubic-bezier(.445,.05,.55,.95), outline-color .4s cubic-bezier(.445,.05,.55,.95);
+    width: 100%;
 }
 
 .inputWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    width: 372px;
 }
 
 .superInput {
 }
 
 .errorInput {
+    border-color: var(--input-border-error-color);
 }
 
 .errorInput:focus {
+    border-color: var(--blue);
 }
 
 .error {
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--danger);
 }
