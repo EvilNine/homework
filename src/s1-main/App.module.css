@@ -42,6 +42,10 @@
     --btn-disabled-color:           #002E5C;
     --btn-disabled-opacity:         .5;
 
+    --sidebar-link-color:           #000000;
+    --sidebar-link-hover:           #58ACFF;
+    --sidebar-link-active:          #0059B2;
+
 
 }
 .App {
