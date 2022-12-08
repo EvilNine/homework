@@ -1,6 +1,6 @@
 .sidebar {
     background: var(--white);
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
@@ -48,6 +48,10 @@
 }
 
 .nav a.active {
+    color: var(--sidebar-link-active);
+    text-decoration: underline;
+}
+.active {
     color: var(--sidebar-link-active);
     text-decoration: underline;
 }
