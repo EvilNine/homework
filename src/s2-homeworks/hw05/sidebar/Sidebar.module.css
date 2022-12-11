@@ -8,7 +8,7 @@
     flex-direction: column;
     padding: 1rem 1.5rem;
     min-width: 317px;
-    display: none;
+    display: flex;
     /*transform: translateX(-100%);*/
     /*transition: transform .4s cubic-bezier(.445,.05,.55,.95);*/
     z-index: 1060;
