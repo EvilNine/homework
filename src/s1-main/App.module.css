@@ -46,6 +46,12 @@
     --sidebar-link-hover:           #58ACFF;
     --sidebar-link-active:          #0059B2;
 
+    --select-border-color:          #C2C2C2;
+    --select-font-size:             .75rem;
+    --select-padding:               3px 10px;
+
+    --radio-border-width:           2px;
+    --radio-border-color:           #000000;
 
 }
 .App {

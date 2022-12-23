@@ -1,14 +1,37 @@
 .radio {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    position: absolute;
 }
 
-.radio::before {
+
+.icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    border: var(--radio-border-width) solid var(--radio-border-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
+.radio:checked + span:before  {
+    display: block;
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
 
-
-.radio:checked::before {
+    background: var(--radio-border-color);
 }
 
 .label {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .options {
