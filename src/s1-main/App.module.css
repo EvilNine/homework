@@ -53,6 +53,10 @@
     --radio-border-width:           2px;
     --radio-border-color:           #000000;
 
+    --table-head-bg:                #E5E5E5;
+    --table-border:                 #E5E5E5;
+    --table-padding:                10px 17px;
+
 }
 .App {
     --header_height: 60px;
