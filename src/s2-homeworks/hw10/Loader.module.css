@@ -1,3 +1,26 @@
 .loader {
-    /*свг и/или анимация*/
+    background: conic-gradient(transparent, #512DE4);
+    background-size: contain;
+    width: 90px;
+    height: 90px;
+    animation: rotate-center .75s cubic-bezier(0.390, 0.575, 0.565, 1.000) infinite both;
+    position: relative;
+    border-radius: 50%;
+}
+.loader:before {
+    background: #fff;
+    content: '';
+    position: absolute;
+    inset: 9px;
+    border-radius: 50%;
+}
+@keyframes rotate-center {
+    0% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
 }
