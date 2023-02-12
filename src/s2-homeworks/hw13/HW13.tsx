@@ -37,23 +37,23 @@ const HW13 = () => {
                 setCode('Код 200!')
                 setImage(success200)
                 // дописать
-                setText(`Good news everyone!`)
-                setInfo('Error code 200 - all good)')
+                setText(`...всё ок)`)
+                setInfo('код 200 - обычно означает что скорее всего всё ок)')
             })
             .catch((e) => {
                 // дописать
                 switch (e.response.staus) {
                     case '400':
-                        setCode('Error code 400')
+                        setCode('Ошибка 400!')
                         setImage(error400)
-                        setInfo('front problems')
-                        setText('You didn\'t send success to body')
+                        setInfo('Ты не отправил success в body вообще!')
+                        setText('ошибка 400 - обычно означает что скорее всего фронт отправил что-то не то на бэк!')
                         break;
                     case '500':
-                        setCode('Error code 500')
+                        setCode('Ошибка 500!')
                         setImage(error500)
-                        setInfo('Server problems')
-                        setText('Fake server error')
+                        setInfo('эмитация ошибки на сервере')
+                        setText('ошибка 500 - обычно означает что что-то сломалось на сервере, например база данных)')
                         break;
                     default:
                         setCode('Error')
