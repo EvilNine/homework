@@ -42,25 +42,31 @@ const HW13 = () => {
             })
             .catch((e) => {
                 // дописать
-                switch (e.response.staus) {
-                    case '400':
+                switch (e.response.status) {
+                    case 400: {
+                        console.log(e.response.status)
                         setCode('Ошибка 400!')
                         setImage(error400)
                         setInfo('Ты не отправил success в body вообще!')
                         setText('ошибка 400 - обычно означает что скорее всего фронт отправил что-то не то на бэк!')
                         break;
-                    case '500':
+                    }
+                    case 500: {
+                        console.log(e.response.status)
                         setCode('Ошибка 500!')
                         setImage(error500)
                         setInfo('эмитация ошибки на сервере')
                         setText('ошибка 500 - обычно означает что что-то сломалось на сервере, например база данных)')
                         break;
-                    default:
+                    }
+                    default: {
                         setCode('Error')
                         setImage(errorUnknown)
                         setInfo('Network Error')
                         setText('AxiosError')
                         break;
+                    }
+                    
                 }
             })
     }
